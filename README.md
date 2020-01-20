@@ -6,7 +6,7 @@ Eva is an advanced, all in one utility bot currently in the developmental stages
 - Server Settings (configuration for logging channels, modroles, etc)
 - Logging 
 - Welcome (welcoming users to the server) 
-- Moderation Commands 
+- Moderation Commands
 - Administration Commands (purge, add/delrole, etc)
 - Music Commands 
 - Tickets 
