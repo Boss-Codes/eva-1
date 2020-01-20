@@ -19,7 +19,7 @@ If you have a suggestion on what to add or a bug report for Eva, feel free to dr
 Currently, as Eva bot is still in development, the only Staff member is the Developer: Boss#0006 (Bossaidy [GitHub Main Account]/BossIsADev [VS Code Account])
 
 ## Contributing 
-If you want to contribute, DM me on Discord (Boss#0006) or make a merge request and I will review it! 
+If you want to contribute, DM me on Discord (Boss#0006) or make a merge request and I will review it and go from there! 
 
 ## License 
 Eva is license under the GNU GPLv-3 License: 
