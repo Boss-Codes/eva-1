@@ -19,7 +19,7 @@ If you have a suggestion on what to add or a bug report for Eva, feel free to dr
 Currently, as Eva bot is still in development, the only Staff member is the Developer: Boss#0006 (Bossaidy [GitHub Main Account]/BossIsADev [VS Code Account])
 
 ## Contributing 
-If you want to contribute, DM me on Discord (Boss#0006) or make a merge request and I will review it and go from there! 
+If you want to contribute, DM me on Discord (Boss#0006) or make a merge request and I will review it and we will go from there! 
 
 ## License 
 Eva is license under the GNU GPLv-3 License: 
@@ -27,4 +27,4 @@ Eva is license under the GNU GPLv-3 License:
 
 *That TLDR was fethces from [TLDRLegal](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)), please also read the full [license](https://github.com/Bossaidy/eva/blob/master/LICENSE) if you plan on self-hosting or using the source code.* 
 
-Note: If you plan to self-host (not recommended), we will **NOT** be providing any support on how to do so. 
+Note: If you plan to self-host (not recommended), we will **NOT** be providing any support on how to do so. We are not obligated to, and we do not encourage it as some of the code may not work for you as it may be hardcoded for specific features in servers. 
