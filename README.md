@@ -24,7 +24,7 @@ If you want to contribute, DM me on Discord (Boss#0006) or make a merge request 
 ## License 
 Eva is license under the GNU GPLv-3 License: 
 > You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions.
--
+
 *That TLDR was fethces from [TLDRLegal](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)), please also read the full [license](https://github.com/Bossaidy/eva/blob/master/LICENSE) if you plan on self-hosting or using the source code.* 
 
 Note: If you plan to self-host (not recommended), we will **NOT** be providing any support on how to do so. 
