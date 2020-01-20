@@ -1,2 +1,5 @@
 # NPM Packages 
 /node_modules 
+
+# Bot Stuff 
+/.env

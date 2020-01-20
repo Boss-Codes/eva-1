@@ -22,7 +22,6 @@ module.exports = async (client, message) => {
         console.log(`Command: ${command.name} was ran by: ${message.author.tag} (${message.author.id}) in guild: ${message.guild.name} (${message.guild.id})`)
         command.run(client, message, args)
 
-        const hook = new WebhookClient('668633025696759808', 'gJ7RbJp2HJINalHeXLmquhEq0lqExAfLQcgwgbU-79AbVCFV4xYUaYFyLCthp-b7rJeI')
         const embed = new RichEmbed()
         .setColor('GREEN')
         .setThumbnail(client.user.avatarURL)
@@ -32,5 +31,5 @@ module.exports = async (client, message) => {
         .addField('Ran in Guild', `${message.guild.name} (${message.guild.id})`)
         .addField('Ran in Channel', `${message.channel.name} (${message.channel.id})`)
         .setTimestamp()
-        hook.send(embed)
+        client.channels.get('668633025696759808').send(embed);
 };
