@@ -3,3 +3,7 @@
 
 # Bot Stuff 
 /.env
+
+# Misc Stuff 
+/package.json 
+/package-lock.json
