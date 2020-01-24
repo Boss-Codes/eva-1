@@ -1,6 +1,5 @@
 const { RichEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
-const { prefix } = require('../../index.js');
 
 module.exports = {
     name: "help",
@@ -9,11 +8,9 @@ module.exports = {
     description: "Returns all commands, or one specific command info",
     usage: "[command | alias]",
     run: async (client, message, args) => {
-    
         if (args[0]) {
             return getCMD(client, message, args[0]);
         } else {
-        
             return getAll(client, message);
         }
     }
@@ -21,12 +18,12 @@ module.exports = {
 
 function getAll(client, message) {
     const embed = new RichEmbed()
-        .setColor("BLUE")
-        
+        .setColor("RANDOM")
+
     const commands = (category) => {
         return client.commands
             .filter(cmd => cmd.category === category)
-            .map(cmd => `!${cmd.name}`)
+            .map(cmd => `- \`${cmd.name}\``)
             .join("\n");
     }
 
