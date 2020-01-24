@@ -26,7 +26,7 @@ function getAll(client, message) {
             .map(cmd => `\`${cmd.name}\``)
             .join(",");
     }*/
-    const commands = (category) => {
+    const cats = (category) => {
         return client.commands
             .filter(cmd => cmd.category === category)
     }
