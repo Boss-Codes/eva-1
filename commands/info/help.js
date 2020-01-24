@@ -15,7 +15,6 @@ module.exports = {
         }
     }
 }
-
 function getAll(client, message) {
     const embed = new RichEmbed()
         .setColor("RANDOM")
@@ -26,12 +25,13 @@ function getAll(client, message) {
             .map(cmd => `\`${cmd.name}\``)
             .join(",");
     }
+    const cats = commands.categories
 
     const info = client.categories
         .map(cat => stripIndents`**${cat[0].toUpperCase() + cat.slice(1)}** \n${commands(cat)}`)
         .reduce((string, category) => string + "\n" + category);
 
-    return message.channel.send(embed.setDescription(info));
+    return message.channel.send(embed.setDescription(info)(embed.addField(cats)));
 }
 
 function getCMD(client, message, input) {
