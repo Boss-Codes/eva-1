@@ -31,7 +31,9 @@ function getAll(client, message) {
         .map(cat => `${cat[0].toUpperCase() + cat.slice(1)} \n${commands(cat)}`)
         .reduce((string, category) => string + "\n" + category);
 
-
+    embed.setTitle('Eva | Help')
+    embed.setDescription('Use `e!help [command]` to get information on a specfic command.\n\nPrefix: e!')
+    embed.setAuthor(client.user.avatarURL)
     return message.channel.send(embed.addField(info));
 }
 
