@@ -28,7 +28,7 @@ function getAll(client, message) {
 
   
     const info = client.categories
-        .map(cat => `${cat[0].toUpperCase() + cat.slice(1)} \n${commands(cat)}`)
+        .map(cat => `${cat[0].toUpperCase() + cat.slice(1)}`)
         // .reduce((string, category) => string + "\n" + category);
 
 
