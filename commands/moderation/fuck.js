@@ -1,1 +1,1 @@
-const daddy = daddy 
+const daddy = require('discord.js'); 
