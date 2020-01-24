@@ -34,6 +34,7 @@ function getAll(client, message) {
     embed.setTitle('Eva | Help')
     embed.setDescription('Use `e!help [command]` to get information on a specfic command.\n\nPrefix: e!')
     embed.setThumbnail(client.user.avatarURL)
+    embed.addBlankField()
     return message.channel.send(embed.addField(info));
 }
 
