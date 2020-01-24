@@ -30,11 +30,12 @@ function getAll(client, message) {
     const info = client.categories
         .map(cat => `${cat[0].toUpperCase() + cat.slice(1)} \n${commands(cat)}`)
         .reduce((string, category) => string + "\n" + category);
-
+ 
+        const size = client.commands.size
     embed.setTitle('Eva | Help')
     embed.setDescription('Use `e!help [command]` to get information on a specfic command.\n\nPrefix: e!')
     embed.setThumbnail(client.user.avatarURL)
-    embed.addBlankField()
+    embed.setFooter(`Eva | ${size} total commands`, client.user.avatarURL)
     return message.channel.send(embed.addField(info));
 }
 
