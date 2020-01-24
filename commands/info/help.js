@@ -19,14 +19,16 @@ function getAll(client, message) {
     const embed = new RichEmbed()
         .setColor("RANDOM")
 
-    const commands = (category) => {
+    /*const commands = (category) => {
         return client.commands
             .filter(cmd => cmd.category === category)
+            
             .map(cmd => `\`${cmd.name}\``)
-            .join(",");
+            .join(",");*/
     }
-    const cats = client.commands 
-    .filter(cmd => cmd.category === category)
+    const cats = (category) => {
+        return client.commands
+            .filter(cmd => cmd.category === category)
 
     const info = client.categories
         .map(cat => stripIndents`**${cat[0].toUpperCase() + cat.slice(1)}** \n${commands(cat)}`)
