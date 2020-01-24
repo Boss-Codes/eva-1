@@ -28,8 +28,8 @@ function getAll(client, message) {
 
   
     const info = client.categories
-        .map(cat => `${cat[0].toUpperCase() + cat.slice(1)}`)
-        // .reduce((string, category) => string + "\n" + category);
+        .map(cat => `${cat[0].toUpperCase() + cat.slice(1)} \n${commands(cat)}`)
+        .reduce((string, category) => string + "\n" + category);
 
 
     return message.channel.send(embed.addField(info));
