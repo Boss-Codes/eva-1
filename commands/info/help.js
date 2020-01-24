@@ -25,7 +25,8 @@ function getAll(client, message) {
             .map(cmd => `\`${cmd.name}\``)
             .join(",");
     }
-    const cats = commands.categories
+    const cats = client.commands 
+    .filter(cmd => cmd.category === category)
 
     const info = client.categories
         .map(cat => stripIndents`**${cat[0].toUpperCase() + cat.slice(1)}** \n${commands(cat)}`)
