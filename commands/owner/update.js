@@ -1,4 +1,5 @@
 const {  exec } = require('child_process'); 
+// suck my cock and balls 
 module.exports = { 
     name: 'update', 
     run: async (client, message, args) => { 
@@ -14,7 +15,7 @@ module.exports = {
                 output = inspect(outputType);
             }
             output = (output.length > 1980 ? output.substr(0, 1977) + '...' : output);
-            return message.channel.send('`\``' + output + '`\``');
+            return message.channel.send(`Successfully pushed and commited to GitHub with the message ${commitm.toString()}`);
         };
     }
     }
