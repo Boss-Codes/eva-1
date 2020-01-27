@@ -1,4 +1,5 @@
 const {  exec } = require('child_process'); 
+// daddy
 module.exports = { 
     name: 'exec', 
     aliases: ['ex'], 

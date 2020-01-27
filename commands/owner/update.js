@@ -7,7 +7,7 @@ module.exports = {
          
         let commitm = args.join(' ')
 
-        exec(`git add . && git commit -m "Updated code [sent using e!update]" && git push`), (error, stdout) => {
+        exec(`git add . && git commit -m "${commitm.toString()}" && git push`), (error, stdout) => {
             const outputType = error || stdout;
             let output = outputType;
             if (typeof outputType === 'object') {
