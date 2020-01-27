@@ -18,10 +18,12 @@ module.exports = async (client, message) => {
     let command = client.commands.get(cmd); 
     if(!command) command = client.commands.get(client.aliases.get(cmd)); 
 
-    if (command)
+    if (!command) return; 
+
+    if (command) { 
         console.log(`Command: ${command.name} was ran by: ${message.author.tag} (${message.author.id}) in guild: ${message.guild.name} (${message.guild.id})`)
         command.run(client, message, args)
-
+    }
         const embed = new RichEmbed()
         .setColor('GREEN')
         .setThumbnail(client.user.avatarURL)
