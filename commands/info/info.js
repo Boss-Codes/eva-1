@@ -26,8 +26,8 @@ module.exports = {
         .addField('Version', `${version}`, true)
         .addField('Servers', client.guilds.size, true)
         .addField('Users', client.users.size, true)
-        .addField('Support Server', '[Click here](https://discord.gg/XZh4JEy)')
-        .addField('Invite Link', `[Click here](https://discordapp.com/api/oauth2/authorize?client_id=659605081238536192&permissions=8&scope=bot)`)
+        .addField('Support Server', '[Click here](https://discord.gg/XZh4JEy)', true)
+        .addField('Invite Link', `[Click here](https://discordapp.com/api/oauth2/authorize?client_id=659605081238536192&permissions=8&scope=bot)`, true)
         message.channel.send(embed)
     }
 }
