@@ -17,7 +17,7 @@ module.exports = {
 }
 function getAll(client, message) {
     const embed = new RichEmbed()
-        .setColor("RANDOM")
+        .setColor("BLUE")
 
     const commands = (category) => {
         return client.commands
@@ -57,6 +57,10 @@ function getCMD(client, message, input) {
         info += `\n**Usage**: ${cmd.usage}`;
         embed.setFooter(`Syntax: <> = required, [] = optional`);
     }
+ 
+    embed.setTitle('Eva | Help')
+    embed.setThumbnail(client.user.avatarURL)
+    embed.setColor('BLUE')
 
     return message.channel.send(embed.setColor("GREEN").setDescription(info));
 }
