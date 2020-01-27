@@ -15,7 +15,7 @@ module.exports = {
                 output = inspect(outputType);
             }
             output = (output.length > 1980 ? output.substr(0, 1977) + '...' : output);
-            return msg.edit(`\`\`\`sh\n${exec.stdout}\`\`\``)
+            return msg.edit('Done!')
             
         };
     }
