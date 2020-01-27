@@ -35,8 +35,8 @@ function getAll(client, message) {
     embed.setTitle('Eva | Help')
     embed.setDescription('Use `e!help [command]` to get information on a specfic command.\n\nPrefix: e!')
     embed.setThumbnail(client.user.avatarURL)
-    embed.setFooter(`Eva | ${size} total commands`, client.user.avatarURL)
-    return message.channel.send(embed.addField(info));
+    embed.setFooter(`Eva | ${size} total commands`, client.user.ava)
+    return message.channel.send(embed.setDescription(info));
 }
 
 function getCMD(client, message, input) {
